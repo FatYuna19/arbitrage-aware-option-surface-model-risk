@@ -216,3 +216,66 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ============================================================
+# Project-specific: option-surface model-risk research archive
+# ============================================================
+
+# Local data sources
+data/raw/
+data/interim/
+data/cache/
+data/vendor/
+data/private/
+
+# Large local artifacts
+*.parquet
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.feather
+*.arrow
+*.zip
+*.gz
+*.7z
+
+# Local logs / scratch outputs
+logs/
+scratch/
+tmp/
+temp/
+
+# Local run artifacts that can be regenerated
+outputs/**/cache/
+outputs/**/temp/
+outputs/**/scratch/
+outputs/**/logs/
+
+# Credentials / secrets / API keys
+.env
+.env.*
+*.key
+*.pem
+secrets.*
+credentials.*
+token.*
+config.local.*
+
+# Local OS/editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Keep selected review artifacts
+!reports/
+!reports/**
+!figures/
+!figures/**
+!outputs/selected_tables/
+!outputs/selected_tables/**
+!outputs/final_diagnostics/
+!outputs/final_diagnostics/**
+!outputs/manifests/
+!outputs/manifests/**
+!data/README.md
